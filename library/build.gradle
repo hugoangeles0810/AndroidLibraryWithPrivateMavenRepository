@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 
+// TODO: 03 - Agregamos el plugin de Artifactory y Maven publish
 apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'maven-publish'
 
@@ -30,7 +31,7 @@ android {
 group = "io.github.hugoangeles0810"
 version = "1.0.0"
 
-// TODO: 03 - Configuramos nuestra libreria para subir al repositorio maven
+// TODO: 04 - Configuramos nuestra libreria para subir al repositorio maven
 publishing {
     publications {
         aar(MavenPublication) {
@@ -77,7 +78,7 @@ publishing {
 }
 
 
-// TODO: 04 - Configuramos artifactory
+// TODO: 05 - Configuramos artifactory
 artifactory {
     contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
     publish {
