@@ -3,28 +3,28 @@
 En este post les mostraré la implementación que realicé para publicar mi Android Library a un repositorio de Maven privado.
 El servidor de repositorios privado que elegí fue [Artifactory](https://jfrog.com/open-source/).
 
-### Instalar y configurar Artifactory
+## Instalar y configurar Artifactory
 
 La instalación de artifactory es trivial solo tenemos que descargarlo desde [aquí](https://jfrog.com/open-source/), descomprimimos el zip. Para iniciar Artifactory ingresamos a la carpeta bin
 
-![Artifactory folder](https://github.com/hugoangeles0810/AndroidLibraryWithPrivateMaven/raw/art/image-01.png)
+![Artifactory folder](https://raw.githubusercontent.com/hugoangeles0810/AndroidLibraryWithPrivateMavenRepository/master/art/image-01.png)
 y buscamos el ejecutamos el archivo artifactory.sh o artifactory.bat dependiendo de nuestro sistema operativo
  
- ![Ejecutando artifactory](https://github.com/hugoangeles0810/AndroidLibraryWithPrivateMaven/raw/art/image-02.png)
+ ![Ejecutando artifactory](https://raw.githubusercontent.com/hugoangeles0810/AndroidLibraryWithPrivateMavenRepository/master/art/image-02.png)
  
  luego de iniciarse Artifactory nos vamos al siguiente [enlace](http://localhost:8081/) y veremos algo parecido a esto:
  
- ![Vista web de artifactory](https://github.com/hugoangeles0810/AndroidLibraryWithPrivateMaven/raw/art/image-03.png)
+ ![Vista web de artifactory](https://raw.githubusercontent.com/hugoangeles0810/AndroidLibraryWithPrivateMavenRepository/master/art/image-03.png)
  
  la primera vez que se inicia Artifactory te solicitará que crees las credenciales de administrador, despues de ello podemos crear un repositorio, nos dirigimos a Admin > Repositories > Local y seleccionamos la opción de nuevo:
  
-  ![Nuevo repositorio](https://github.com/hugoangeles0810/AndroidLibraryWithPrivateMaven/raw/art/image-04.png)
+  ![Nuevo repositorio](https://raw.githubusercontent.com/hugoangeles0810/AndroidLibraryWithPrivateMavenRepository/master/art/image-04.png)
  
  seleccionamos Maven e ingresamos el Repo key, una vez creado el repositorio podremos verlo desde la pestaña Artifacts
  
 
  
- ### Configurar mi librería con Artifactory
+ ## Configurar mi librería con Artifactory
  
  El primer paso es instalar gradle plugin de Artifactory en el build.gradle de nuestro proyecto de la libreria
 ```gradle
@@ -147,7 +147,7 @@ Una vez configurada la librería, para publicarla en nuestro servidor Maven debe
 ./gradlew build artifactoryPublish
 ```
 
-### Como usar la librería
+## Como usar la librería
 
 Para usar la librería solo agregamos nuestro repositorio de maven a nuestro build.gradle del app
 ```gradle
@@ -163,5 +163,5 @@ repositories {
 }
 ```
 
-### Conclusiones
+## Conclusiones
 Aprendimos a configurar nuestro propio Maven repostory y publicar nuestras librerias, esto es importante por que en ocaciones tenemos que desarrollar librerias privadas para nuestro equipo que se usan en diferentes proyectos por lo que es muy útil distribuir nuestra librería por medio de Maven. 
