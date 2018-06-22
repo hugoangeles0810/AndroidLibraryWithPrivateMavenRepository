@@ -5,10 +5,10 @@ El servidor de repositorios privado que elegí fue [Artifactory](https://jfrog.c
 
 ## Instalar y configurar Artifactory
 
-La instalación de artifactory es trivial solo tenemos que descargarlo desde [aquí](https://jfrog.com/open-source/), descomprimimos el zip. Para iniciar Artifactory ingresamos a la carpeta bin
+La instalación de artifactory es sencilla solo tenemos que descargarlo desde [aquí](https://jfrog.com/open-source/), descomprimimos el zip. Para iniciar Artifactory ingresamos a la carpeta bin
 
 ![Artifactory folder](https://raw.githubusercontent.com/hugoangeles0810/AndroidLibraryWithPrivateMavenRepository/master/art/image-01.png)
-y buscamos el ejecutamos el archivo artifactory.sh o artifactory.bat dependiendo de nuestro sistema operativo
+y ejecutamos el archivo artifactory.sh o artifactory.bat dependiendo de nuestro sistema operativo
  
  ![Ejecutando artifactory](https://raw.githubusercontent.com/hugoangeles0810/AndroidLibraryWithPrivateMavenRepository/master/art/image-02.png)
  
