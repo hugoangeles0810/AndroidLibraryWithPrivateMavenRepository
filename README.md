@@ -158,9 +158,7 @@ repositories {
 
 y solo falta agregar la dependencia de la librería
 ```gradle
-repositories {
-    maven { url "http://localhost:8081/artifactory/libs-release-local" }
-}
+implementation "io.github.hugoangeles0810:library:1.0.0"
 ```
 
 ## Conclusiones
